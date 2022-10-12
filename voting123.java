@@ -47,10 +47,9 @@ public class voting123 extends variablesl {
         sign.addActionListener(new ActionListener(){  
           public void actionPerformed(ActionEvent e){ 
             f1.dispose(); 
-            username="hello";
+            username="hello in login";
             System.out.println(username);
-          new signup();
-         
+          new Signup();
           }
         });
        
@@ -86,7 +85,7 @@ public class voting123 extends variablesl {
         @Override
         public void mouseClicked(MouseEvent e) {
             f.dispose();
-            new signup();
+            new Signup();
         }
 
     });
@@ -164,12 +163,12 @@ public class voting123 extends variablesl {
 //signup page
 
 
- class signup
+ class Signup
 {
     JFrame f=new JFrame();
-    signup()
+    Signup()
     {
-        
+        System.out.print("hellloo");
         JLabel l1=new JLabel("First Name:");
         l1.setBounds(20,40,150,20);
         f.add(l1);
@@ -271,8 +270,7 @@ public class voting123 extends variablesl {
             f.dispose();
             new Login();
         }
-
-    });
+           });
        already.setForeground(Color.BLUE);
        already.setBounds(100,420,200,15);
        f.add(already);
@@ -302,11 +300,12 @@ public class voting123 extends variablesl {
       
        b1.setBounds(180,440,100,40);
        f.add(b1);
-       f.setSize(1100,600);
+       
+        }
+      });
+      f.setSize(1100,600);
        f.setLayout(null);
        f.setVisible(true);
-
-
     }
    
 }
